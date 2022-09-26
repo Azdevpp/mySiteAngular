@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500;600;700&display=swap");
+
+/*---------------------global----------------------------*/
+* {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    line-height: 150%;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #fff8f3;
+}
+
+img {
+    max-width: 100%;
+}
+
+button a {
+    color: rgb(87, 50, 50);
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+/*-----------------navigation bar--------------------*/
+.top_menu {
+    width: 100%;
+    position: fixed;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    height: 1.5rem;
+    background: linear-gradient(180deg,
+            rgba(180, 119, 65, 0.7) 0%,
+            rgba(255, 211, 172, 0.7) 100%);
+    padding: 1rem;
+    box-shadow: 0 0 2rem silver;
+    border-bottom: 1px solid rgb(66, 38, 14);
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: inline-block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(66, 38, 14);
+    transition: 0.3s;
+    padding-left: 1.5rem;
+    text-shadow: 0 0 0.3rem rgb(66, 38, 14);
+    letter-spacing: 3px;
+}
+
+.menu a:hover {
+    font-size: 1.5rem;
+    color: #3a3a3a;
+    text-shadow: 0 0 0.5rem #3a3a3a;
+}
+
+.menu a:hover span {
+    color: rgb(94, 58, 27);
+    font-weight: 500;
+}
+
+/*---------------------image----------------------------*/
+.home_img {
+    width: 100%;
+    padding-top: 3.5rem;
+}
+
+.home_img img {
+    max-width: 100%;
+}
+
+/*---------------------header----------------------------*/
+.header_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_text {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    color: #ffcb9c;
+    display: inline-block;
+    background-color: #b47741;
+    border-radius: 20px;
+    text-shadow: 0 0 1rem black;
+}
+
+/*---------------------box----------------------------*/
+
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: purple; */
+    /* padding: 10px; */
+}
+
+.box_left {
+    display: inline-block;
+    width: 40%;
+    margin: 20px 20px 0 20px;
+    /* background: black; */
+}
+
+.box_right {
+    display: inline-block;
+    width: 40%;
+    margin: 20px 20px 0 20px;
+    /* background: blue; */
+}
+
+.box_right_bottom {
+    margin-bottom: 2rem;
+}
+
+.box {
+    margin-bottom: 2rem;
+}
+
+.content {
+    border: 2px solid rgb(87, 50, 50);
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: center;
+    color: #000000;
+    box-shadow: 0 0 1.3rem black;
+}
+
+.content img {
+    width: 100%;
+}
+
+.content h4 {
+    font-size: 2rem;
+    padding-top: 1rem;
+    color: rgb(87, 50, 50);
+}
+
+.content p {
+    padding: 1.5rem 0;
+}
+
+/*---------------------footer----------------------------*/
+.footer {
+    min-height: 8rem;
+    font-size: 1.2rem;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.2),
+            rgba(180, 119, 65, 0.7));
+    text-align: center;
+}
+
+.footer h3 {
+    color: rgb(87, 50, 50);
+    text-shadow: 0 0.3rem 0.5rem #000000;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+.footer .contact {
+    font-size: 1rem;
+    align-self: center;
+    font-weight: bolder;
+    color: rgb(87, 50, 50);
+    background: linear-gradient(rgba(180, 119, 65, 0.7) 20%,
+            rgba(255, 211, 172, 0.7) 100%);
+    padding: 0.3rem 4rem;
+    border-radius: 1rem;
+    transition: 0.3s;
+    border: 2px solid rgb(87, 50, 50);
+}
+
+.footer .contact:hover {
+    font-size: 1.3rem;
+}
+
+.footer .autor {
+    font-size: 0.85rem;
+    margin-top: 0.8rem;
+    padding: 1.5rem 0;
+    color: rgba(87, 50, 50, 0.8);
+    font-weight: bold;
+}
+
+/* ========= Scupturs Pagec ======== */
+.main_sculp_page {
+    padding-top: 3.5rem;
+    width: 100%;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.main_sculp_page h1 {
+    padding: 1rem 0;
+    color: rgb(87, 50, 50);
+}
+
+.main_sculp_page p {
+    margin: 0.75rem 0.25rem;
+}
+
+.main_sculp_page img {
+    display: block;
+    width: 100%;
+}
+
+.main_sculp_page button {
+    margin: 0.85rem 0;
+    padding: 0.25rem 1rem;
+    background-color: #ffcb9c;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.container_products_left {
+    display: inline-block;
+    width: 45%;
+}
+
+.container_products_left div {
+    border: 2px solid rgb(87, 50, 50);
+    margin: 0.75rem 0.25rem;
+}
+
+.container_products_left h2 {
+    padding: 0.8rem 0;
+}
+
+.container_products_right div {
+    border: 2px solid rgb(87, 50, 50);
+    margin: 0.75rem 0.25rem;
+}
+
+.container_products_right h2 {
+    padding: 0.8rem 0;
+}
+
+.container_products_right {
+    display: inline-block;
+    margin-bottom: 3.5rem;
+    /* background-color: blue; */
+    width: 45%;
+}
+
+/* ========= Vases Page ======== */
+
+.main-vases-page {
+    margin: 0 1rem;
+    padding: 4rem 3rem;
+}
+
+.container-vase {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-vases-page h1 {
+    text-align: center;
+    color: rgb(87, 50, 50);
+    padding: 1rem;
+    border-bottom: 2px solid #ffcb9c;
+}
+
+.container-vase-left {
+    display: inline-block;
+    width: 50%;
+    margin: 3rem 2rem;
+    padding: 1.5rem 2rem;
+    border-bottom: 3px solid #ffcb9c;
+}
+
+.container-vase-ritgh {
+    display: inline-block;
+    width: 50%;
+    padding: 1.5rem 2rem;
+    border-bottom: 3px solid #ffcb9c;
+}
+
+.box-vase {
+    margin: 2rem;
+}
+
+.box-vase h3 {
+    margin: 0.4rem 0;
+}
+
+.box-vase img {
+    margin-top: 0.5rem;
+    display: block;
+}
+
+.box-vase button {
+    padding: 0.25rem 1rem;
+    margin-top: 4rem;
+    background-color: #ffcb9c;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+/* ------------------- Products Page ------------------- */
+.header_products {
+    margin-bottom: 2rem;
+    padding-top: 4rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid brown;
+    color: rgb(87, 50, 50);
+}
+
+.content_main_photo {
+    text-align: center;
+}
+
+.content_main_photo h2 {
+    padding-top: 1rem;
+}
+
+.content_main_photo p {
+    padding: 1rem 4rem;
+}
+
+.second_product_photo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.second_product_text {
+    padding: 0 2rem;
+}
+
+.third_product_photo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.third_product_text {
+    padding: 0 2rem;
+}
+
+/* ------------------- Form Page ---------------------- */
+
+.page-view {
+    width: 100%;
+    height: 80vh;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+    /* background-color: aqua; */
+}
+
+.container-form::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/bg.jpg") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(20px);
+}
+
+.contact-box {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.left {
+    height: 100%;
+    background: url("images/bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.right {
+    padding: 25px 40px;
+    margin: 0 2rem;
+}
+
+h2 {
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+}
+
+.field:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus {
+    background-color: #fff;
+    border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area {
+    min-height: 150px;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #2ecc71;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+}
+
+@media screen and (max-width: 880px) {
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        height: 200px;
+    }
+}
+
+/*---------------------media----------------------------*/
+/* Until 468px screen width */
+@media screen and (max-width: 576px) {
+    /* .menu a {
+    font-size: 0.85rem;
+    padding-left: 0.5rem;
+  } */
+    /* .box-vase {
+    width: 90%;
+  } */
+}
+
+@media screen and (min-width: 600px) {
+    /* .menu a {
+    font-size: 1.2rem;
+    padding-left: 0.8rem;
+  } */
+    /* .box-vase {
+    width: 35%;
+  } */
+}
+
+@media screen and (min-width: 992px) {
+    /* .menu a {
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+  } */
+    /* .box-vase {
+    width: 40%;
+    align-content: center;
+  } */
+}
