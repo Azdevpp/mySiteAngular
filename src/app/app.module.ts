@@ -17,6 +17,7 @@ import { VasesProduct1Component } from './vases-product1/vases-product1.componen
 import { VasesProduct2Component } from './vases-product2/vases-product2.component';
 import { VasesProduct3Component } from './vases-product3/vases-product3.component';
 import { VasesProduct4Component } from './vases-product4/vases-product4.component';
+import { CalcProductsComponent } from './calc-products/calc-products.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { VasesProduct4Component } from './vases-product4/vases-product4.componen
     VasesProduct1Component,
     VasesProduct2Component,
     VasesProduct3Component,
-    VasesProduct4Component
+    VasesProduct4Component,
+    CalcProductsComponent
   ],
   imports: [
     BrowserModule,

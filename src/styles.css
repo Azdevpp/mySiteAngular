@@ -419,7 +419,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-h2::after {
+.right h2::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -493,7 +493,7 @@ h2::after {
   }
 }
 
-/* @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
     .menu a {
     font-size: 1.2rem;
     padding-left: 0.8rem;
@@ -512,4 +512,4 @@ h2::after {
     width: 40%;
     align-content: center;
   }
-} */
+}
