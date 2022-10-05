@@ -16,7 +16,7 @@ import { VasesProduct4Component } from './vases-product4/vases-product4.componen
 
 const routes: Routes = [
   {
-    path: 'Home',
+    path: '',
     component: MainComponent
   },
   {
