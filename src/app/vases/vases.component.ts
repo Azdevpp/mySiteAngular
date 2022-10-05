@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-vases',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./vases.component.css']
 })
 export class VasesComponent implements OnInit {
-
-  constructor() { }
+  userID: any;
+  constructor( private activatedRoute : ActivatedRoute ){
+    this.activatedRoute.paramMap.subscribe(params => this.userID = params.get("id"));
+  }
 
   ngOnInit(): void {
   }

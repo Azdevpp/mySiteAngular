@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute } from '@angular/router';
+
 
 export class SculptAdvancedProductDetails{
+  id: number;
   title: string;
   mainPhoto: string;
   secondTitle: string;
@@ -13,7 +16,8 @@ export class SculptAdvancedProductDetails{
   paragraph2: string;
   cost: number;
 
-  constructor(title:string,mainPhoto: string,secondTitle: string,paragraph:string, pic1:string,header1:string,paragraph1:string,pic2:string,header2:string,paragraph2:string,cost: number) {
+  constructor(id:number,title:string,mainPhoto: string,secondTitle: string,paragraph:string, pic1:string,header1:string,paragraph1:string,pic2:string,header2:string,paragraph2:string,cost: number) {
+    this.id = id;
     this.title = title;
     this.mainPhoto = mainPhoto;
     this.secondTitle = secondTitle;
@@ -34,10 +38,14 @@ export class SculptAdvancedProductDetails{
   styleUrls: ['./sculpt-product1.component.css']
 })
 export class SculptProduct1Component implements OnInit {
+  userID : any;
+
   SculptAdvancedProductDetailsArr: SculptAdvancedProductDetails[];
-  constructor() { 
+  constructor(private activatedRoute : ActivatedRoute) {
+    this.activatedRoute.paramMap.subscribe(params => this.userID = params.get("id"));
     this.SculptAdvancedProductDetailsArr = [
       new SculptAdvancedProductDetails(
+        0,
         'Napkin and wine dispenser',
         '../../assets/images/Products/sculpts/NapkinProductMainPhoto.jpg',
         'Napkin and wine dispenser for dining table',
@@ -51,6 +59,7 @@ export class SculptProduct1Component implements OnInit {
         50000
       ),
       new SculptAdvancedProductDetails(
+        1,
         'A whiskey stand and two glasses',
         '../../assets/images/Products/sculpts/WiskiProductMainPhoto.jpg',
         'A whiskey stand and two glasses',
@@ -64,6 +73,7 @@ export class SculptProduct1Component implements OnInit {
         120000
       ),
       new SculptAdvancedProductDetails(
+        2,
         'A hand emerging from an open book and holding a snake',
         '../../assets/images/Products/sculpts/HandProductMainPhoto.jpg',
         'A hand emerging from an open book and holding a snake',
@@ -77,6 +87,7 @@ export class SculptProduct1Component implements OnInit {
         89000
       ),
       new SculptAdvancedProductDetails(
+        3,
         'Botom jaw and Tongue',
         '../../assets/images/Products/sculpts/TongueProductMainPhoto.jpg',
         'Tongue and lower jaw with inscription',

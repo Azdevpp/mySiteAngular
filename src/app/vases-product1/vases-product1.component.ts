@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute } from '@angular/router';
 
 export class VasesAdvancedProductDetails{
+  id: number;
   title: string;
   mainPhoto: string;
   secondTitle: string;
@@ -12,7 +14,8 @@ export class VasesAdvancedProductDetails{
   header2: string;
   paragraph2: string;
 
-  constructor(title:string,mainPhoto: string,secondTitle: string,paragraph:string, pic1:string,header1:string,paragraph1:string,pic2:string,header2:string,paragraph2:string) {
+  constructor(id:number,title:string,mainPhoto: string,secondTitle: string,paragraph:string, pic1:string,header1:string,paragraph1:string,pic2:string,header2:string,paragraph2:string) {
+    this.id = id;
     this.title = title;
     this.mainPhoto = mainPhoto;
     this.secondTitle = secondTitle;
@@ -31,12 +34,13 @@ export class VasesAdvancedProductDetails{
   styleUrls: ['./vases-product1.component.css']
 })
 export class VasesProduct1Component implements OnInit {
-
+  userID: any;
   VasesAdvancedProductDetailsArr: VasesAdvancedProductDetails[];
-  constructor() {
-    
+  constructor(private activatedRoute : ActivatedRoute) {
+      this.activatedRoute.paramMap.subscribe(params => this.userID = params.get("id"));
       this.VasesAdvancedProductDetailsArr = [
-      new VasesAdvancedProductDetails(
+        new VasesAdvancedProductDetails(
+        0,
         'A bowl for candys',
         '../../assets/images/Products/vase/CandyProductMainPhoto.jpg',
         'A bowl for candys with squer surface',
@@ -48,7 +52,8 @@ export class VasesProduct1Component implements OnInit {
         'Angel View',
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliasfuga deleniti placeat corporis laudantium, odit id, voluptastemporibus officia, eius repudiandae quae voluptatum consequunturtempore? Nesciunt adipisci mollitia nam.'
       ),
-      new VasesAdvancedProductDetails(
+        new VasesAdvancedProductDetails(
+        1,
         'Small vase for flower',
         '../../assets/images/Products/vase/FlowerProductMainPhoto.jpg',
         'Small vase for flower with rose',
@@ -60,7 +65,8 @@ export class VasesProduct1Component implements OnInit {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliasfuga deleniti placeat corporis laudantium, odit id, voluptastemporibus officia, eius repudiandae quae voluptatum consequunturtempore? Nesciunt adipisci mollitia nam.',
         '../../assets/images/Products/vase/FlowerProduct2Photo.jpg'
       ),
-      new VasesAdvancedProductDetails(
+        new VasesAdvancedProductDetails(
+        2,
         'A bowl for nuts',
         '../../assets/images/Products/vase/NutsProductMainPhoto.jpg',
         'A bowl for nuts made from Indian rosehip',
@@ -72,7 +78,8 @@ export class VasesProduct1Component implements OnInit {
         'Back View',
         'paragLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliasfuga deleniti placeat corporis laudantium, odit id, voluptastemporibus officia, eius repudiandae quae voluptatum consequunturtempore? Nesciunt adipisci mollitia nam.raph2'
       ),
-      new VasesAdvancedProductDetails(
+        new VasesAdvancedProductDetails(
+        3,
         'Spice crushing bowl',
         '../../assets/images/Products/vase/SpiceProductMainPhoto.jpg',
         'Spice crushing bowl Inspired by a pine tree',
