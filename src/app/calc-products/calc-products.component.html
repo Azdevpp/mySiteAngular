@@ -1,8 +1,11 @@
 <div class="calcProd">
     <h1>Calc</h1>
     <div>
-        <button>+</button>
-        <button>c</button>
-        <button>-</button>
+        <button (click)="addProduct(45)">+</button>
+        <button (click)="cancel()">c</button>
+        <button (click)="subProduct(65)">-</button>
     </div>
+    <h2>You have {{productsAdded}} products to buy</h2>
+    <h3>Price {{priceAmount}}</h3>
+    <p>this id = {{userID}}</p>
 </div>

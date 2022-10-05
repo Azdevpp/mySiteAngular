@@ -28,6 +28,8 @@ export class VasesAdvancedProductDetails{
     this.paragraph2 = paragraph2;
   }
 }
+
+
 @Component({
   selector: 'app-vases-product1',
   templateUrl: './vases-product1.component.html',
@@ -61,9 +63,10 @@ export class VasesProduct1Component implements OnInit {
         '../../assets/images/Products/vase/FlowerProduct1Photo.jpg',
         'Just vase View',
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Perspiciatis pariatur optio expedita facilis earum aspernaturmolestias hic est, explicabo commodi debitis eos id, dignissimos quoquibusdam quaerat adipisci. Id, suscipit?',
+        '../../assets/images/Products/vase/FlowerProduct2Photo.jpg',
         'With flower view',
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliasfuga deleniti placeat corporis laudantium, odit id, voluptastemporibus officia, eius repudiandae quae voluptatum consequunturtempore? Nesciunt adipisci mollitia nam.',
-        '../../assets/images/Products/vase/FlowerProduct2Photo.jpg'
+        
       ),
         new VasesAdvancedProductDetails(
         2,

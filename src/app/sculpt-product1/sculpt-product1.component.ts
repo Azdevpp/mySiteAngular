@@ -38,7 +38,8 @@ export class SculptAdvancedProductDetails{
   styleUrls: ['./sculpt-product1.component.css']
 })
 export class SculptProduct1Component implements OnInit {
-  userID : any;
+  userID: any;
+  
 
   SculptAdvancedProductDetailsArr: SculptAdvancedProductDetails[];
   constructor(private activatedRoute : ActivatedRoute) {
@@ -105,5 +106,7 @@ export class SculptProduct1Component implements OnInit {
 
   ngOnInit(): void {
   }
+
+  
 
 }
