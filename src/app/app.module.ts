@@ -9,9 +9,8 @@ import { ContactComponent } from './contact/contact.component';
 import { SculpturesComponent } from './sculptures/sculptures.component';
 import { VasesComponent } from './vases/vases.component';
 import { MainComponent } from './main/main.component';
-import { SculptProduct1Component } from './sculpt-product1/sculpt-product1.component';
-import{VasesProduct1Component} from './vases-product1/vases-product1.component'
 import { CalcProductsComponent } from './calc-products/calc-products.component';
+import { ProductsComponent } from './all-products/products.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +21,8 @@ import { CalcProductsComponent } from './calc-products/calc-products.component';
     SculpturesComponent,
     VasesComponent,
     MainComponent,
-    SculptProduct1Component,
-    VasesProduct1Component,
-    CalcProductsComponent
+    CalcProductsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
