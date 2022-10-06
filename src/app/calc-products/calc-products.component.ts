@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { SculptProduct1Component } from '../sculpt-product1/sculpt-product1.component';
 
 export class calcProducts{
   id: number;
