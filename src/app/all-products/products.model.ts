@@ -10,7 +10,7 @@ export class AdvancedProductDetails{
   pic2: string;
   header2: string;
   paragraph2: string;
-  cost: number;
+  price: number;
 
   constructor(id:number,title:string,mainPhoto: string,secondTitle: string,paragraph:string, pic1:string,header1:string,paragraph1:string,pic2:string,header2:string,paragraph2:string,cost: number) {
     this.id = id;
@@ -24,6 +24,6 @@ export class AdvancedProductDetails{
     this.pic2 = pic2;
     this.header2 = header2;
     this.paragraph2 = paragraph2;
-    this.cost = cost;
+    this.price = cost;
   }
 }

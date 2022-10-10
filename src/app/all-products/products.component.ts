@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { AdvancedProductDetails } from './products.model';
 
 
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -10,9 +11,12 @@ import { AdvancedProductDetails } from './products.model';
 })
 export class ProductsComponent implements OnInit {
   userID: any;
+  price: any;
+  
+  
   AdvancedProductDetailsArr: AdvancedProductDetails[];
 
-  constructor(private activatedRoute : ActivatedRoute) {
+  constructor(private activatedRoute: ActivatedRoute) {
     this.activatedRoute.paramMap.subscribe(params => this.userID = params.get("id"));
     this.AdvancedProductDetailsArr = [
       new AdvancedProductDetails(
@@ -131,6 +135,8 @@ export class ProductsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
   }
+
 
 }
