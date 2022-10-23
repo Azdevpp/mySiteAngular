@@ -24,7 +24,7 @@
         <img src="{{AdvancedProductDetailsArr[userID].pic2}}" alt="" />
     </div>
     <div class="priceProduct">
-        {{userID}}
-        <app-calc-products [price]="price"></app-calc-products>
+        {{AdvancedProductDetailsArr[userID].price}}
+        <app-calc-products [price]="AdvancedProductDetailsArr[userID].price"></app-calc-products>
     </div>
 </div>

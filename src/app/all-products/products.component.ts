@@ -2,22 +2,21 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AdvancedProductDetails } from './products.model';
 
-
-
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent implements OnInit {
   userID: any;
-  price: any;
-  
-  
+  // price: any = 120;
+
   AdvancedProductDetailsArr: AdvancedProductDetails[];
 
   constructor(private activatedRoute: ActivatedRoute) {
-    this.activatedRoute.paramMap.subscribe(params => this.userID = params.get("id"));
+    this.activatedRoute.paramMap.subscribe(
+      (params) => (this.userID = params.get('id'))
+    );
     this.AdvancedProductDetailsArr = [
       new AdvancedProductDetails(
         0,
@@ -89,7 +88,7 @@ export class ProductsComponent implements OnInit {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliasfuga deleniti placeat corporis laudantium, odit id, voluptastemporibus officia, eius repudiandae quae voluptatum consequunturtempore? Nesciunt adipisci mollitia nam.',
         524
       ),
-        new AdvancedProductDetails(
+      new AdvancedProductDetails(
         1,
         'Small vase for flower',
         '../../assets/images/Products/vase/FlowerProductMainPhoto.jpg',
@@ -103,7 +102,7 @@ export class ProductsComponent implements OnInit {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliasfuga deleniti placeat corporis laudantium, odit id, voluptastemporibus officia, eius repudiandae quae voluptatum consequunturtempore? Nesciunt adipisci mollitia nam.',
         684
       ),
-        new AdvancedProductDetails(
+      new AdvancedProductDetails(
         2,
         'A bowl for nuts',
         '../../assets/images/Products/vase/NutsProductMainPhoto.jpg',
@@ -114,10 +113,10 @@ export class ProductsComponent implements OnInit {
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit.Perspiciatis pariatur optio expedita facilis earum aspernaturmolestias hic est, explicabo commodi debitis eos id, dignissimos quoquibusdam quaerat adipisci. Id, suscipit?',
         '../../assets/images/Products/vase/NutsProduct2Photo.jpg',
         'Back View',
-          'paragLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliasfuga deleniti placeat corporis laudantium, odit id, voluptastemporibus officia, eius repudiandae quae voluptatum consequunturtempore? Nesciunt adipisci mollitia nam.raph2',
+        'paragLorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliasfuga deleniti placeat corporis laudantium, odit id, voluptastemporibus officia, eius repudiandae quae voluptatum consequunturtempore? Nesciunt adipisci mollitia nam.raph2',
         580
       ),
-        new AdvancedProductDetails(
+      new AdvancedProductDetails(
         3,
         'Spice crushing bowl',
         '../../assets/images/Products/vase/SpiceProductMainPhoto.jpg',
@@ -131,12 +130,8 @@ export class ProductsComponent implements OnInit {
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aliasfuga deleniti placeat corporis laudantium, odit id, voluptastemporibus officia, eius repudiandae quae voluptatum consequunturtempore? Nesciunt adipisci mollitia nam.',
         360
       ),
-    ]
+    ];
   }
 
-  ngOnInit(): void {
-    
-  }
-
-
+  ngOnInit(): void {}
 }

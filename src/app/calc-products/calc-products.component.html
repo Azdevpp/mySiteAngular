@@ -1,11 +1,10 @@
 <div class="calcProd">
-    <h1>price : {{userID}}</h1>
+    <h1>Product Price : ${{price}}</h1>
     <div>
-        <button (click)="addProduct(45)">+</button>
+        <button (click)="addProduct(price)">+</button>
         <button (click)="cancel()">c</button>
-        <button (click)="subProduct(65)">-</button>
+        <button (click)="subProduct(price)">-</button>
     </div>
     <h2>You have {{productsAdded}} products to buy</h2>
-    <h3>Price {{priceAmount}}</h3>
-    <p>this id = {{userID}}</p>
+    <h1>Need To pay : {{priceAmount}}</h1>
 </div>

@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-calc-products',
   templateUrl: './calc-products.component.html',
-  styleUrls: ['./calc-products.component.css']
+  styleUrls: ['./calc-products.component.css'],
 })
 export class CalcProductsComponent implements OnInit {
   userID: any;
@@ -13,16 +13,14 @@ export class CalcProductsComponent implements OnInit {
   priceAmount: number = 0;
 
   constructor(private activatedRoute: ActivatedRoute) {
-    this.activatedRoute.paramMap.subscribe(params => this.userID = params.get("id"));
+    this.activatedRoute.paramMap.subscribe(
+      (params) => (this.userID = params.get('id'))
+    );
   }
 
-  ngOnInit(): void {
-    
-  }
-
+  ngOnInit(): void {}
 
   addProduct(amount: number) {
-    
     this.priceAmount += amount;
     this.productsAdded++;
   }
@@ -39,5 +37,4 @@ export class CalcProductsComponent implements OnInit {
     this.priceAmount = 0;
     this.productsAdded = 0;
   }
-
 }
